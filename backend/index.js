@@ -10,7 +10,6 @@ app.get("/",(req,res) =>{
 
 
 app.get("/api/flights", (req,res)=>{
-    
     const  {from,to} = req.query;
 
     if(!from || !to){
