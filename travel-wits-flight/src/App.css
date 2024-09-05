@@ -1,0 +1,134 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Styling for user input area */
+.user {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 10px;
+  margin-top: 20px;
+}
+
+.input_user {
+  margin-bottom: 10px;
+}
+
+.input_user[type="text"],
+.user input[type="text"], 
+.user input[type="number"] {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: calc(100% - 22px); /* Adjust width considering padding and border */
+  max-width: 100px;
+ 
+}
+
+.user,.input_user{
+  max-height: 50px;
+  min-height: 50px;
+}
+
+.user button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.user button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for the city list */
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 8px;
+  border: 1px solid #ddd;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+}
+
+li:hover {
+  background-color: #e0e0e0;
+}
+
+/* Styling for results section */
+.results {
+  margin-top: 150px;
+}
+
+.results h2 {
+  margin-bottom: 15px;
+}
+
+.results ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.results .f {
+  margin-bottom: 15px;
+}
+
+.results li {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.results p {
+  font-size: 18px;
+  color: #ff0000;
+  font-weight: bold;
+}
